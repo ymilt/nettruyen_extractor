@@ -15,7 +15,7 @@ Chạy app và chọn 1 trong 3 chế độ + đợi là xong.
 [***Tải về App***](#download)
 
 > [!WARNING]
-> Trên một số trình diệt virus sẽ báo **[file](dist/follow.exe) có virus**. Lưu ý rằng đây chỉ là thông báo lỗi do Pyinstaller được sử dụng để tạo file exe gây ra nhầm lẫn. Đọc thêm ở [đây<sub>tiếng Anh</sub>](https://coderslegacy.com/pyinstaller-exe-detected-as-virus-solutions/)
+> Trên một số trình diệt virus sẽ báo **[file](dist/follow.exe) có virus**. Lưu ý rằng đây chỉ là thông báo sai do Pyinstaller được sử dụng để tạo file exe gây ra nhầm lẫn. Đọc thêm ở [đây<sub>tiếng Anh</sub>](https://coderslegacy.com/pyinstaller-exe-detected-as-virus-solutions/). Tham khảo hướng dẫn khôi phục app: [Windows](https://www.itechtics.com/restore-quarantined-files/#how-to-restore-windows-defender-quarantined-files), [Avast](https://support.avast.com/en-us/article/Use-Antivirus-Quarantine/#pc), [Malwarebytes](https://support.malwarebytes.com/hc/en-us/articles/360038479214-Restore-or-delete-quarantined-items-in-Malwarebytes-for-Windows-v4), [Bitdefender](https://www.bitdefender.com/consumer/support/answer/2092/#scroll-to-heading-0)
 
 ## Cách lấy GUID
 vào https://f.nettruyen(vv/tt/hh/...).com/
