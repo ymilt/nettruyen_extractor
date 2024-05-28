@@ -3,7 +3,7 @@ Tải về danh sách theo dõi và lịch sử (sắp) đọc truyện từ net
 > [!NOTE]
 > App chưa hỗ trợ trình duyệt Cốc Cốc
 # Usages
-- Tự động tìm các tài khoản đã đăng nhập trên máy và tải về danh sách theo
+- Tự động tìm các tài khoản đã đăng nhập trên máy và tải về danh sách theo dõi
 - Cho phép đăng nhập để lấy dữ liệu
 
 App có 2 chế độ cho phép đăng nhập để lấy list theo dõi hoặc tự động tìm tài khoản đã từng đăng nhập trên máy tính. Chạy app và chọn 1 trong 2 chế độ (1 hoặc 2) + đợi là xong.
