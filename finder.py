@@ -17,6 +17,7 @@ def getGuids(browser):
                 for host in cookies:
                     if re.match(r"^(f?\.)?nettruyen\w{1,8}\.com$", host) == None:
                         continue
+                    
                     coo = cookies[host]
                     if "comicvisitor" in coo and guids.get(coo["comicvisitor"], "") == "":
                         guids[coo["comicvisitor"]] = coo[".ASPXAUTH"] if ".ASPXAUTH" in coo else ""
@@ -26,8 +27,9 @@ def getGuids(browser):
             for host in cookies:
                 if re.match(r"^(f?\.)?nettruyen\w{1,8}\.com$", host) == None:
                     continue
-                coo = cookies[host]["/"]
-                if "comicvisitor" in coo and guids.get(coo["comicvisitor"], "") == "":
-                    guids[coo["comicvisitor"].value] = coo[".ASPXAUTH"].value if ".ASPXAUTH" in coo else ""
+
+                for coo in cookies[host].values():
+                    if "comicvisitor" in coo and guids.get(coo["comicvisitor"], "") == "":
+                        guids[coo["comicvisitor"].value] = coo[".ASPXAUTH"].value if ".ASPXAUTH" in coo else ""
     
     return guids

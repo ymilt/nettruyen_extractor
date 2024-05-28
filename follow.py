@@ -66,9 +66,12 @@ try:
     print("Các chế độ:")
     print("1. Đăng nhập để tải danh sách theo dõi")
     print("2. Tìm kiếm tài khoản trên trình duyệt")
-    print("3. Nhập GUID tài khoản")
+    print("3. Nhập GUID tài khoản\n")
 
-    match input("Mời chọn: ").strip():
+    mode = input("Mời chọn: ").strip()
+    print()
+
+    match mode:
         case "1":
             extractByLogin()
         case "2":
