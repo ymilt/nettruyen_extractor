@@ -276,7 +276,7 @@ class Components:
                 self.comicId = info["comicId"]
                 self.comicName = info["comicName"]
                 self.commentCount = info["commentCount"]
-                self.comments = tuple(map(Components.Comment, info["childComments"]))
+                self.comments = tuple(map(Components.Comment, info["comments"]))
 
     class Chapter:
 
