@@ -58,17 +58,23 @@ def extractByCookies():
     for i, guid in enumerate(guids):
         extractFollows(guid, f"follows{i + 1}.txt")
 
+def extractByGuid():
+    guid = input("Nhập GUID: ").strip()
+    extractFollows(guid)
 
 try:
     print("Các chế độ:")
     print("1. Đăng nhập để tải danh sách theo dõi")
     print("2. Tìm kiếm tài khoản trên trình duyệt")
+    print("3. Nhập GUID tài khoản")
 
     match input("Mời chọn: ").strip():
         case "1":
             extractByLogin()
         case "2":
             extractByCookies()
+        case "3":
+            extractByGuid()
         case _:
             print("Chế độ không tồn tại")
 
