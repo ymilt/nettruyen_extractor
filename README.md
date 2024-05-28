@@ -7,7 +7,7 @@ Tải về danh sách theo dõi và lịch sử (sắp) đọc truyện từ net
 - Cho phép đăng nhập để lấy dữ liệu
 - Nhập GUID để tải truyện (hướng dẫn lấy ở bên dưới)
 
-App có 2 chế độ cho phép đăng nhập để lấy list theo dõi hoặc tự động tìm tài khoản đã từng đăng nhập trên máy tính. Chạy app và chọn 1 trong 2 chế độ (1 hoặc 2) + đợi là xong.
+App có 3 chế độ cho phép đăng nhập để lấy list theo dõi hoặc tự động tìm tài khoản đã từng đăng nhập trên máy tính. Chạy app và chọn 1 trong 3 chế độ + đợi là xong.
 
 > [!WARNING]
 > Vui lòng đóng trình duyệt trước khi sử dụng app để đảm bảo app hoạt động ổn định
