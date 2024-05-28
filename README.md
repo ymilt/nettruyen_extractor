@@ -1,6 +1,8 @@
 # Nettruyen Extractor
 Tải về danh sách theo dõi và lịch sử (sắp) đọc truyện từ nettruyen
 
+Xem thêm bản web ở [đây](https://github.com/ymilt/nettruyen_extractor_web)
+
 # Usages
 - Tự động tìm các tài khoản đã đăng nhập trên máy và tải về danh sách theo dõi
 - Cho phép đăng nhập để lấy dữ liệu
