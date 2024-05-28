@@ -2,3 +2,5 @@ curl_cffi==0.7.0b4
 bs4
 ujson
 browser_cookie3
+pycryptodome
+pywin32

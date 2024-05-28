@@ -45,7 +45,7 @@ def extractByCookies():
     print("Đang tìm tài khoản")
 
     guids = {}
-    for browser in ["chrome", "firefox", "librewolf", "opera", "opera_gx", "edge", "chromium", "brave", "vivaldi", "safari"]:
+    for browser in ["chrome", "firefox", "librewolf", "opera", "opera_gx", "edge", "chromium", "brave", "vivaldi", "safari", "coccoc"]:
         try:
             guids.update(finder.getGuids(browser))
         except: continue
