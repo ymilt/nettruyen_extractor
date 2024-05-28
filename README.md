@@ -1,7 +1,7 @@
 # Nettruyen Extractor
 Tải về danh sách theo dõi và lịch sử (sắp) đọc truyện từ nettruyen
 > [!NOTE]
-> App chưa hỗ trợ trình duyệt Cốc Cốc
+> Cập nhật: App đã hỗ trợ Cốc Cốc
 # Usages
 - Tự động tìm các tài khoản đã đăng nhập trên máy và tải về danh sách theo dõi
 - Cho phép đăng nhập để lấy dữ liệu
