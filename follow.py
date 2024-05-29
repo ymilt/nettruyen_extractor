@@ -1,23 +1,59 @@
 import pintruyen
 import finder
+import time
+
+from concurrent.futures import ThreadPoolExecutor
 
 
 def extractFollows(userguid, fname="followlist.txt"):
     print("Đang tải danh sách theo dõi...")
 
+    load = {
+        "run": True,
+        "pages": 0
+    }
+
+    def proc_page(p):
+        print(f"Đang tải trang {p}...")
+        if not load["run"]:
+            return
+        follow_page = pintruyen.API.Comic.getFollows(userguid, p)
+        if not len(follow_page): 
+            load["run"] = False
+            return
+        load[p] = follow_page
+        load["pages"] += 1
+
+    workers = 3
+    wait_time = workers * 4.5
+
+    with ThreadPoolExecutor(workers) as exe:
+        i = 1
+        while load["run"]:
+            load["pages"] = 0
+            ts = time.time()
+
+            for _ in range(workers):
+                exe.submit(proc_page, i + _)
+
+            while load["run"] and load["pages"] < workers:
+                if time.time() - ts > wait_time:
+                    # Timeout
+                    return ""
+                time.sleep(.05)
+
+            i += workers
+
+    load.pop("run"), load.pop("pages")
+
     comics = []
 
-    page = 1
+    for key in sorted(load.keys()):
+        comics.extend(load[key])
 
-    while True:
-        print(f"Đang tải trang {page}...")
-        follow_page = pintruyen.API.Comic.getFollows(userguid, page)
-        if not len(follow_page): break
-        comics.extend(follow_page)
-        page += 1
 
     with open(fname, "w", encoding="utf-8") as f:
-        f.write("\n".join(map(lambda i: f"{i + 1}. {comics[i].name}{' - ' + comics[i].lastViewChapter.title if comics[i].lastViewChapter else ""}", range(len(comics)))))
+        f.write("\n".join(map(lambda i: f"{i + 1}. {comics[i].name}{' - ' + comics[i].lastViewChapter.title if comics[i].lastViewChapter else ''}", range(len(comics)))))
 
         print(f"Đã lưu \"{fname}\"!")
 

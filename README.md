@@ -3,6 +3,10 @@ Tải về danh sách theo dõi và lịch sử (sắp) đọc truyện từ net
 
 Xem thêm bản web ở [đây](https://github.com/ymilt/nettruyen_extractor_web)
 
+
+> [!CAUTION]
+> Hiện tại api đã dead nên app cũng sẽ không chạy nữa. Thời gian api dead không cố định và có thể sẽ hoạt động trở lại sau vài ngày
+
 # Usages
 - Tự động tìm các tài khoản đã đăng nhập trên máy và tải về danh sách theo dõi
 - Cho phép đăng nhập để lấy dữ liệu
@@ -10,7 +14,7 @@ Xem thêm bản web ở [đây](https://github.com/ymilt/nettruyen_extractor_web
 
 Chạy app và chọn 1 trong 3 chế độ + đợi là xong.
 
-> [!WARNING]
+> [!TIP]
 > Vui lòng đóng trình duyệt trước khi sử dụng app để đảm bảo app hoạt động ổn định.
 > Với một số trình duyệt như Chrome, Edge, Cốc Cốc,... thì có thể bạn cần phải [tắt chương trình chạy ngầm](https://quantrimang.com/cong-nghe/cach-tang-toc-windows-10-bang-cach-tat-ung-dung-chay-ngam-142153)
 
@@ -27,7 +31,7 @@ vào https://f.nettruyen(vv/tt/hh/...).com/
 3. Nhìn qua bên trái tìm "Cookies" rồi chọn mục có tên giống với link https://f.nettruyen(vv/tt/hh/...).com/
 4. Copy giá trị của hàng tại cột "value" mà có giá trị của hàng đó tại cột "name" là "comicvisitor"
 
-> [!WARNING]
+> [!CAUTION]
 > Đây là mã tài khoản của bạn. Tuyệt đối **KHÔNG CHIA SẺ VỚI AI KHÁC**
 
 # Download

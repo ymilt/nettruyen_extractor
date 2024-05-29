@@ -1,4 +1,4 @@
-import ujson as re
+import re
 import browser_cookie3
 import coccoc
 
