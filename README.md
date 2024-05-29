@@ -5,7 +5,7 @@ Xem thêm bản web ở [đây](https://github.com/ymilt/nettruyen_extractor_web
 
 
 > [!CAUTION]
-> Hiện tại api đã dead nên app cũng sẽ không chạy nữa. Thời gian api dead không cố định và có thể sẽ hoạt động trở lại sau vài ngày
+> App đã dead hoàn toàn. Repo này sẽ sớm được archive
 
 # Usages
 - Tự động tìm các tài khoản đã đăng nhập trên máy và tải về danh sách theo dõi

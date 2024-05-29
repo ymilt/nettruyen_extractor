@@ -68,6 +68,12 @@ class Sort:
     COMMENTS = 25
     CHAPTERS = 30
 
+class Gender:
+
+    ALL = -1
+    GIRL = 1
+    BOY = 2
+
 class Status:
 
     FINISHED = 2
@@ -156,7 +162,7 @@ class API:
                 position = None, 
                 genres: list[int] = None, 
                 not_genres: list[int] = None, 
-                gender: Literal["Boy"] | Literal["Girl"] = None, 
+                gender = None, 
                 status: int = None, 
                 minchapter: int = None, 
                 sort: int = None
