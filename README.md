@@ -5,7 +5,7 @@ Xem thêm bản web ở [đây](https://github.com/ymilt/nettruyen_extractor_web
 
 
 > [!CAUTION]
-> App đã dead hoàn toàn. Repo này sẽ sớm được archive
+> Do app đã dead hoàn toàn nên giờ repo này sẽ được archive
 
 # Usages
 - Tự động tìm các tài khoản đã đăng nhập trên máy và tải về danh sách theo dõi
