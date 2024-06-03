@@ -29,7 +29,7 @@ def getGuids(browser):
                     continue
 
                 for coo in cookies[host].values():
-                    if "comicvisitor" in coo and guids.get(coo["comicvisitor"], "") == "":
+                    if "comicvisitor" in coo and guids.get(coo["comicvisitor"].value, "") == "":
                         guids[coo["comicvisitor"].value] = coo[".ASPXAUTH"].value if ".ASPXAUTH" in coo else ""
     
     return guids
